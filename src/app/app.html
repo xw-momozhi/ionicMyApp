@@ -1,0 +1,44 @@
+<!-- type: push 菜单和页面一起移动，overlay 菜单移动 reveal 页面移动 -->
+<!-- right: left 左边出现 right 右边出现 -->
+<ion-menu side="left" type="push" [content]="userInfo" id="userMenu">
+
+    <ion-header>
+        <ion-toolbar color="secondary">
+        <ion-title>设置</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <button ion-item>
+                <ion-avatar item-start>
+                    <img src="../assets/imgs/my04.png">
+                </ion-avatar>
+                修改密码
+            </button>   
+            <button ion-item>
+                <ion-avatar item-start>
+                    <img src="../assets/imgs/my07.png">
+                </ion-avatar>
+                意见建议
+            </button>   
+        </ion-list>
+        <ion-footer>
+            <div class="close" (click)="logout()">
+                <ion-avatar item-start>
+                    <img src="../assets/imgs/my06.png">
+                </ion-avatar>
+                退出登陆
+            </div>  
+        </ion-footer>
+        <!-- <ion-list>
+        <button menuClose="userMenu" ion-button color="dark" clear>
+            <ion-icon name="log-out" item-start ></ion-icon>
+            注销重新登陆
+        </button>
+        </ion-list> -->
+    </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #userInfo>加载中...</ion-nav>

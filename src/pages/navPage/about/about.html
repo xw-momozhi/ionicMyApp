@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button ion-button icon-only (click)="addItem()"><ion-icon name="add"></ion-icon></button>
+    <ion-list>
+        <button ion-button  @itemState="" (click)="removeItem(item)" *ngFor="let item of items">{{item.name}}</button>
+    </ion-list>
+</ion-content>
