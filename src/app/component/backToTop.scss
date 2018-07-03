@@ -1,0 +1,37 @@
+back-top{
+    cursor:pointer;
+    font-size:45px;
+    background-color:#488aff;
+    color:#fff;
+    display:block;
+    width:40px;
+    height:40px;
+    text-align:center;
+    line-height:60px;
+    border-radius:50%;
+    position: fixed;
+    bottom:40px ;
+    right:14px ;
+    box-sizing:border-box;
+    //display:none;
+    cursor:pointer;
+    z-index: 999; 
+    -webkit-transform: translate3d(200%,0,0);
+    transform: translate3d(200%,0,0);
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;	/* Firefox 4 */
+    -webkit-transition: all 0.4s;	/* Safari 和 Chrome */
+    -o-transition: all 0.4s;
+    ion-icon{
+        line-height: 40px;
+        font-size: 40px;
+        vertical-align: top;
+    }
+    .backtotop{
+        height:40px;
+    }
+}
+back-top.on{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
